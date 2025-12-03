@@ -1,0 +1,193 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #000;
+    color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+    background: #0B0F19;
+    position: fixed;
+    z-index: 5;
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(134, 198, 254);
+    text-shadow: 0 0 8px rgb(134, 198, 254);
+    text-transform: uppercase;
+}
+
+nav a{
+    margin-left: 40px;
+    text-decoration: none;
+    color: chocolate;
+    font-size: 18px;
+    position: relative;
+    transition: 0.3s;
+}
+
+nav a::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    left: 0%;
+    bottom: 0%;
+    border-radius: 16px;
+    background: chocolate;
+    position: absolute;
+    transition: 0.3s;
+}
+
+nav a:hover::after{
+    width: 60%;
+    transform: translateX(40%);
+}
+
+nav a:hover{
+    text-shadow: 0 0 18px chocolate;
+    transform: scale(1.25);
+}
+
+.hero{
+    height: 90vh;
+    background-image: url("luxa.org-opacity-changed-._blurred-bookshelf-many-old-books-in-a-book-shop-or-library-photo.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.hero-text h2{
+    color: #00fffb;
+    font-size: 33px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    text-shadow: 0 0 8px #00fffb;
+}
+
+.hero-text p{
+    font-size: 20px;
+    opacity: 0.8;
+    margin-bottom: 20px;
+
+}
+
+.hero-btn {
+    text-decoration: none;
+    background-color: #fff;
+    padding: 12px 30px;
+    color: #000;
+    border-radius: 16px;
+    font-weight: bold;
+    box-shadow: 0 0 15px #ffffff;
+    transition: 0.3s;
+}
+
+.hero-btn:hover{
+    font-size: 18px;
+    box-shadow: 0 0 30px #fff;
+    transform: scale(1.15);
+}
+
+.book{
+    background: #ffe2af;
+    height: 90vh;
+    text-align: center;
+}
+
+.book-title{
+    padding: 20px;
+    font-size: 36px;
+    color: #ff0000;
+    text-shadow: 0 0 16px #ff0000;
+    margin-bottom: 30px;
+}
+
+.book-container{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.type{
+    background: #0B0F19;
+    padding: 20px;
+    width: 280px;
+    border-radius: 16px;
+    box-shadow: 0 0 23px rgba(122,232,344,0.5);
+    border: 1px solid rgba(122,232,344,0.5);
+    transition: 0.3s;
+    margin-top: 30px;
+    margin-left: 40px;
+}
+
+.type h4{
+    text-transform: uppercase;
+    font-size: 18px;
+    color: lightpink;
+    text-shadow: 0 0 20px;
+    padding: 10px;
+}
+
+.type p{
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 18px;
+    padding: 10px;
+    padding-bottom: 30px;
+}
+
+.type:hover{
+    transform: scale(1.15);
+    box-shadow: 0 0 50px rgba(122,232,344,0.5);
+}
+
+.type-btn{
+    background-color: #fff;
+    text-decoration: none;
+    padding: 15px 40px;
+    margin-top: 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #000;
+    box-shadow: 0 0 25px #ffffff;
+    transition: 0.3s;
+}
+
+.type-btn:hover{
+    transform: translateY(-8px);
+    box-shadow: 0 0 40px #ffffff;
+}
+
+.moti-1{
+    background: #ffd000;
+    height: 90vh;
+    text-align: center;
+}
+
+.moti-1-title{
+    padding: 40px;
+    font-size: 24px;
+    color: aqua;
+    text-shadow: 0 0 15px  aqua;
+    text-transform: uppercase;
+}
